@@ -10,7 +10,7 @@ ENTITY alu IS
 END alu;
 
 ARCHITECTURE rtl OF alu IS
-    COMPONENT schifoadder IS
+    COMPONENT adder IS
         PORT (
            cin : IN STD_LOGIC;
            a, b : IN STD_LOGIC_VECTOR (63 DOWNTO 0);
