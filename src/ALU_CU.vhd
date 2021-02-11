@@ -49,10 +49,10 @@ case ALU_Op is
 		if funct3 = "000" then 
 			B_inv <= '0';
 			MUX_out <= "000";
-		elsif funct3 = "101" then
+		elsif funct3 = "101" then -- shift
 			B_inv <= '0';
 			MUX_out <= "100";
-		elsif funct3 = "111" then
+		elsif funct3 = "111" then -- and
 			B_inv <= '0';
 			MUX_out <= "011";
 		else 

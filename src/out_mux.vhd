@@ -9,6 +9,7 @@ ENTITY out_mux IS
     );
 END out_mux;
 
+-- As a function of the selection bits coming from the ALU_CU we select the correct output of the ALU
 ARCHITECTURE bhv OF out_mux IS
 BEGIN
     WITH sel SELECT
@@ -18,4 +19,4 @@ BEGIN
         ands WHEN "011",
         shift WHEN "100",
         (OTHERS => '0') WHEN OTHERS;
-END bhv; -- bhv
+END bhv;

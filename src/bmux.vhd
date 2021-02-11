@@ -8,6 +8,7 @@ ENTITY bmux IS
         o : OUT STD_LOGIC_VECTOR(63 DOWNTO 0));
 END bmux;
 
+-- This component is used to complement b if we have to perform a subtraction
 ARCHITECTURE bhv OF bmux IS
 BEGIN
     with sel select
