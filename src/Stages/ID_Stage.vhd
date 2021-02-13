@@ -92,7 +92,6 @@ signal mem_read_tmp,mem_write_tmp : std_logic;
 signal alu_src1_tmp,alu_src2_tmp,reg_write_out_tmp : std_logic;
 signal control_string_in, control_string_out : std_logic_vector(9 downto 0);
 signal branch_jal,branch_beq : std_logic;
-signal eq : std_logic;
 
 begin
 
@@ -104,7 +103,7 @@ control_unit : cu port map(istruction(6 downto 0), branch_jal, branch_beq, mem_r
 
 control_string_in <= mem_read_tmp & mem_write_tmp & mux_memToReg_tmp & aluOp_tmp & alu_src1_tmp & alu_src2_tmp & reg_write_out_tmp;
 
-ctrl_mux : mux_controls port map(control_string_in, "0000000000", nop_ctrl, control_string_out);
+ctrl_mux : mux_controls port map("0000000000", control_string_in, nop_ctrl, control_string_out);
 
 br_check : Branch_check port map(rs1_tmp, rs2_tmp, branch_jal, branch_beq, pc_sel);
 

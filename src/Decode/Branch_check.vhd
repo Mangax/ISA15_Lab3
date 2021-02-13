@@ -28,12 +28,11 @@ else
 	cmp <= '0'; 
 end if; 
 
-beq_t <= cmp and Branch_BEQ; 
-
-Branch_taken <= beq_t or Branch_JAL; 
-	
-	
 end process;
+
+beq_t <= cmp and Branch_BEQ; 
+Branch_taken <= beq_t or Branch_JAL; 
+
 end bhe; 
 
 	

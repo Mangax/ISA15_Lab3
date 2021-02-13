@@ -26,15 +26,15 @@ signal rf : register_array;
 
 begin
 
-process(clk, rst_n)
+process(clk ,rst_n)
 begin
 	if(rst_n = '0') then
 		for i in 0 to 2**5 - 1 loop
 			rf(i) <= (others => '0');
 		end loop;
-	elsif(rising_edge(clk)) then
+	elsif(reg_write = '1') then
 		rf(to_integer(unsigned(add_rd))) <= write_data;
-	end if;
+	end if;	
 end process;
 
 data_rs1 <= rf(to_integer(unsigned(add_rs1)));

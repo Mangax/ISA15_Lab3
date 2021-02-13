@@ -197,15 +197,14 @@ end component;
 -- Signal definition
 
 -- Fetch
-signal pc_jump_tmp, pc_if, pc4_if : std_logic_vector(63 downto 0);
-signal pc_mux_sel : std_logic;
+signal pc_if, pc4_if : std_logic_vector(63 downto 0);
 
 -- Pipe IF/ID
 signal pc_pipe_if, pc4_pipe_if : std_logic_vector(63 downto 0);
 signal istruction_id : std_logic_vector(31 downto 0);
 
 -- Decode
-signal clear_tmp, reg_write_tmp : std_logic;
+signal reg_write_tmp, pc_mux_sel : std_logic;
 signal mem_read_id, mem_write_id, alu_src1_id, alu_src2_id, reg_write_id : std_logic;
 signal mux_memToReg_id : std_logic_vector(1 downto 0);
 signal aluOp_id : std_logic_vector(2 downto 0);
@@ -217,7 +216,7 @@ signal rs1_id, rs2_id, imm_id: std_logic_vector(63 downto 0);
 signal mem_read_pipe_id, mem_write_pipe_id, alu_src1_pipe_id, alu_src2_pipe_id, reg_write_pipe_id : std_logic;
 signal mux_memToReg_pipe_id : std_logic_vector(1 downto 0);
 signal aluOp_pipe_id : std_logic_vector(2 downto 0);
-signal pc4_pipe_id, pc_pipe_id : std_logic_vector(63 downto 0);
+signal pc_jump_tmp, pc4_pipe_id, pc_pipe_id : std_logic_vector(63 downto 0);
 signal rs1_pipe_id, rs2_pipe_id, imm_pipe_id: std_logic_vector(63 downto 0);
 signal add_rs1_pipe_id, add_rs2_pipe_id, add_rd_pipe_id : std_logic_vector(4 downto 0);
 signal extra_bit_pipe_id : std_logic_vector(3 downto 0);
@@ -252,11 +251,10 @@ begin
 
 fetch : IF_Stage port map(clk, rst_n, pc_jump_tmp, pc_mux_sel, pc_load_tmp, pc_if, pc4_if);
 
-pipeIF : pipe_if_id port map(clk, rst_n, clear_tmp, load_tmp, pc_if, pc4_if, istruction, pc_pipe_if, pc4_pipe_if, istruction_id);		
+pipeIF : pipe_if_id port map(clk, rst_n, pc_mux_sel, load_tmp, pc_if, pc4_if, istruction, pc_pipe_if, pc4_pipe_if, istruction_id);		
 
 decode : ID_Stage port map(clk, rst_n, pc_pipe_if, istruction_id, nop_tmp, add_rd_pipe_mem, write_data_rf, 
-reg_write_tmp, pc_jump_tmp, pc_mux_sel, mem_read_id, mem_write_id, mux_memToReg_id, aluOp_id, alu_src1_id, 
-alu_src2_id, reg_write_id, rs1_id, rs2_id, rs1_add_id, rs2_add_id, imm_id);
+reg_write_pipe_mem, pc_jump_tmp, pc_mux_sel, mem_read_id, mem_write_id, mux_memToReg_id, aluOp_id, alu_src1_id, alu_src2_id, reg_write_id, rs1_id, rs2_id, rs1_add_id, rs2_add_id, imm_id);
 
 extra_bit_id <= (istruction_id(30) & istruction_id(14 downto 12));
 
@@ -273,6 +271,7 @@ pipeEX : pipe_ex_mem port map(clk, rst_n, pc4_pipe_id, mem_read_pipe_id, mem_wri
 alu_result_ex, rs2_pipe_id, imm_pipe_id, add_rd_pipe_id, pc4_pipe_ex, mem_read_pipe_ex, mem_write_pipe_ex, mux_memToReg_pipe_ex,
 reg_write_pipe_ex, alu_result_pipe_ex, rs2_pipe_ex, imm_pipe_ex, add_rd_pipe_ex);
 
+pc <= pc_if;
 address <= alu_result_pipe_ex;
 write_data <= rs2_pipe_ex;
 data_mem_read <= mem_read_pipe_ex;
