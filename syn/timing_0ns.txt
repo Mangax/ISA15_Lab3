@@ -1,0 +1,113 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Mon Feb 15 18:52:50 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: pipeEX/rd_addr_reg/S_out_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: fetch/pc_reg/Output_reg[2]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeEX/rd_addr_reg/S_out_reg[3]/CK (DFFR_X1)            0.00 #     0.00 r
+  pipeEX/rd_addr_reg/S_out_reg[3]/QN (DFFR_X1)            0.06       0.06 f
+  pipeEX/rd_addr_reg/U5/ZN (INV_X1)                       0.04       0.11 r
+  pipeEX/rd_addr_reg/S_out[3] (regN_N5_2)                 0.00       0.11 r
+  pipeEX/out_rd_addr[3] (pipe_ex_mem)                     0.00       0.11 r
+  forwarding/rd_exe[3] (forwarding_unit)                  0.00       0.11 r
+  forwarding/U10/ZN (XNOR2_X1)                            0.06       0.17 r
+  forwarding/U8/ZN (AND3_X1)                              0.05       0.22 r
+  forwarding/U28/ZN (NAND2_X1)                            0.03       0.25 f
+  forwarding/U29/ZN (NOR3_X1)                             0.06       0.31 r
+  forwarding/forward_b[1] (forwarding_unit)               0.00       0.31 r
+  execute/Forward_B_cmd[1] (EX_Stage)                     0.00       0.31 r
+  execute/mux3_to1_2/sel[1] (mux3to1_1)                   0.00       0.31 r
+  execute/mux3_to1_2/U35/Z (BUF_X1)                       0.05       0.36 r
+  execute/mux3_to1_2/U6/ZN (NOR2_X1)                      0.03       0.39 f
+  execute/mux3_to1_2/U28/Z (BUF_X2)                       0.05       0.44 f
+  execute/mux3_to1_2/U52/ZN (AOI222_X1)                   0.10       0.54 r
+  execute/mux3_to1_2/U53/ZN (INV_X1)                      0.02       0.57 f
+  execute/mux3_to1_2/mux_out[0] (mux3to1_1)               0.00       0.57 f
+  execute/mux2to1_2/a[0] (mux2to1_1)                      0.00       0.57 f
+  execute/mux2to1_2/U11/ZN (NAND2_X1)                     0.03       0.60 r
+  execute/mux2to1_2/U13/ZN (NAND2_X2)                     0.05       0.64 f
+  execute/mux2to1_2/mux_out[0] (mux2to1_1)                0.00       0.64 f
+  execute/ALU_component/b[0] (alu)                        0.00       0.64 f
+  execute/ALU_component/U132/ZN (NAND2_X1)                0.04       0.68 r
+  execute/ALU_component/U122/ZN (INV_X1)                  0.05       0.74 f
+  execute/ALU_component/U456/ZN (AOI22_X1)                0.08       0.81 r
+  execute/ALU_component/U97/ZN (NAND3_X1)                 0.04       0.86 f
+  execute/ALU_component/U666/ZN (AOI22_X1)                0.06       0.91 r
+  execute/ALU_component/U667/ZN (OAI221_X1)               0.05       0.96 f
+  execute/ALU_component/U668/ZN (INV_X1)                  0.04       1.00 r
+  execute/ALU_component/U669/ZN (OAI33_X1)                0.04       1.04 f
+  execute/ALU_component/U215/ZN (AOI221_X1)               0.09       1.13 r
+  execute/ALU_component/U670/ZN (INV_X1)                  0.02       1.15 f
+  execute/ALU_component/outp/shift[14] (out_mux)          0.00       1.15 f
+  execute/ALU_component/outp/U124/ZN (AOI221_X1)          0.06       1.21 r
+  execute/ALU_component/outp/U125/ZN (INV_X1)             0.03       1.24 f
+  execute/ALU_component/outp/o[14] (out_mux)              0.00       1.24 f
+  execute/ALU_component/res[14] (alu)                     0.00       1.24 f
+  execute/ALU_Result[14] (EX_Stage)                       0.00       1.24 f
+  decode/forward[14] (ID_Stage)                           0.00       1.24 f
+  decode/muxA/b[14] (mux2to1_4)                           0.00       1.24 f
+  decode/muxA/U64/Z (MUX2_X1)                             0.07       1.31 f
+  decode/muxA/mux_out[14] (mux2to1_4)                     0.00       1.31 f
+  decode/br_check/data_rs1[14] (Branch_check)             0.00       1.31 f
+  decode/br_check/U78/ZN (XNOR2_X1)                       0.05       1.36 r
+  decode/br_check/U82/ZN (NAND4_X1)                       0.04       1.40 f
+  decode/br_check/U87/ZN (NOR4_X1)                        0.07       1.47 r
+  decode/br_check/U88/ZN (AND3_X1)                        0.06       1.53 r
+  decode/br_check/U20/ZN (AOI21_X1)                       0.03       1.56 f
+  decode/br_check/U47/ZN (AOI21_X1)                       0.05       1.61 r
+  decode/br_check/U46/Z (CLKBUF_X3)                       0.06       1.67 r
+  decode/br_check/Branch_taken (Branch_check)             0.00       1.67 r
+  decode/pc_sel (ID_Stage)                                0.00       1.67 r
+  fetch/mux_sel (IF_Stage)                                0.00       1.67 r
+  fetch/mux/sel (mux2to1_0)                               0.00       1.67 r
+  fetch/mux/U3/Z (CLKBUF_X3)                              0.07       1.74 r
+  fetch/mux/U9/Z (MUX2_X1)                                0.08       1.82 f
+  fetch/mux/mux_out[2] (mux2to1_0)                        0.00       1.82 f
+  fetch/pc_reg/Input[2] (PC)                              0.00       1.82 f
+  fetch/pc_reg/U29/ZN (NAND2_X1)                          0.03       1.85 r
+  fetch/pc_reg/U30/ZN (OAI21_X1)                          0.03       1.88 f
+  fetch/pc_reg/Output_reg[2]/D (DFFR_X1)                  0.01       1.89 f
+  data arrival time                                                  1.89
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  fetch/pc_reg/Output_reg[2]/CK (DFFR_X1)                 0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.89
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.01
+
+
+1
