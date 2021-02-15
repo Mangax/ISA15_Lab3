@@ -1,6 +1,0 @@
-H 2141964 11 3 0 1 1 0 0 0 0
-L 4 ieee 19 $MODEL_TECH/../ieee
-L 3 std 18 $MODEL_TECH/../std
-L 4 work 6 ./work
-D 23 ./work.data_memory(beh) B:n@NPAFU[0MAGYhgDE3K2 0 1
-2 0  0 3M[1PVYl;Tef>a2iL`O=`1 0 0 1

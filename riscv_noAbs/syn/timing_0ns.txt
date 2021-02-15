@@ -1,0 +1,131 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: A non-unate path in clock network for clock 'MY_CLK'
+ from pin 'decode/br_check/U23/ZN' is detected. (TIM-052)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Mon Feb 15 23:44:35 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: pipeID/add_rs2_reg/S_out_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: pipeIF/pc4_reg/S_out_reg[2]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeID/add_rs2_reg/S_out_reg[2]/CK (DFFR_X1)            0.00 #     0.00 r
+  pipeID/add_rs2_reg/S_out_reg[2]/QN (DFFR_X1)            0.07       0.07 r
+  pipeID/add_rs2_reg/U3/ZN (INV_X1)                       0.02       0.09 f
+  pipeID/add_rs2_reg/S_out[2] (regN_N5_4)                 0.00       0.09 f
+  pipeID/out_add_rs2[2] (pipe_id_ex)                      0.00       0.09 f
+  forwarding/rs2[2] (forwarding_unit)                     0.00       0.09 f
+  forwarding/U51/Z (XOR2_X1)                              0.07       0.16 f
+  forwarding/U56/ZN (NOR4_X1)                             0.08       0.25 r
+  forwarding/U18/ZN (AND3_X1)                             0.06       0.30 r
+  forwarding/U23/ZN (AND2_X2)                             0.06       0.36 r
+  forwarding/forward_b[1] (forwarding_unit)               0.00       0.36 r
+  execute/Forward_B_cmd[1] (EX_Stage)                     0.00       0.36 r
+  execute/mux3_to1_2/sel[1] (mux3to1_1)                   0.00       0.36 r
+  execute/mux3_to1_2/U44/Z (XOR2_X1)                      0.09       0.45 r
+  execute/mux3_to1_2/U34/Z (BUF_X2)                       0.07       0.52 r
+  execute/mux3_to1_2/U45/ZN (AOI222_X1)                   0.04       0.56 f
+  execute/mux3_to1_2/U46/ZN (INV_X1)                      0.03       0.59 r
+  execute/mux3_to1_2/mux_out[4] (mux3to1_1)               0.00       0.59 r
+  execute/mux2to1_2/a[4] (mux2to1_3)                      0.00       0.59 r
+  execute/mux2to1_2/U42/ZN (OAI22_X1)                     0.03       0.62 f
+  execute/mux2to1_2/U16/ZN (INV_X2)                       0.06       0.68 r
+  execute/mux2to1_2/mux_out[4] (mux2to1_3)                0.00       0.68 r
+  execute/ALU_component/b[4] (alu)                        0.00       0.68 r
+  execute/ALU_component/bmux0/b[4] (bmux)                 0.00       0.68 r
+  execute/ALU_component/bmux0/U14/Z (XOR2_X1)             0.10       0.78 r
+  execute/ALU_component/bmux0/o[4] (bmux)                 0.00       0.78 r
+  execute/ALU_component/adder0/b[4] (adder_1)             0.00       0.78 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/B[4] (adder_1_DW01_add_3)
+                                                          0.00       0.78 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/U1504/ZN (NOR2_X1)
+                                                          0.04       0.82 f
+  execute/ALU_component/adder0/add_1_root_add_20_2/U882/ZN (NOR2_X1)
+                                                          0.04       0.86 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/U1438/ZN (NAND2_X1)
+                                                          0.03       0.89 f
+  execute/ALU_component/adder0/add_1_root_add_20_2/U991/ZN (OAI21_X1)
+                                                          0.06       0.94 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/U918/ZN (AOI21_X1)
+                                                          0.04       0.98 f
+  execute/ALU_component/adder0/add_1_root_add_20_2/U1346/ZN (OAI21_X1)
+                                                          0.06       1.05 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/U883/Z (BUF_X2)
+                                                          0.07       1.11 r
+  execute/ALU_component/adder0/add_1_root_add_20_2/U1541/ZN (AOI21_X1)
+                                                          0.04       1.15 f
+  execute/ALU_component/adder0/add_1_root_add_20_2/U1480/Z (XOR2_X1)
+                                                          0.07       1.22 f
+  execute/ALU_component/adder0/add_1_root_add_20_2/SUM[58] (adder_1_DW01_add_3)
+                                                          0.00       1.22 f
+  execute/ALU_component/adder0/s[58] (adder_1)            0.00       1.22 f
+  execute/ALU_component/outp/add[58] (out_mux)            0.00       1.22 f
+  execute/ALU_component/outp/U292/ZN (OAI22_X1)           0.04       1.26 r
+  execute/ALU_component/outp/U293/ZN (INV_X1)             0.03       1.29 f
+  execute/ALU_component/outp/o[58] (out_mux)              0.00       1.29 f
+  execute/ALU_component/res[58] (alu)                     0.00       1.29 f
+  execute/ALU_Result[58] (EX_Stage)                       0.00       1.29 f
+  decode/forward[58] (ID_Stage)                           0.00       1.29 f
+  decode/muxA/b[58] (mux2to1_0)                           0.00       1.29 f
+  decode/muxA/U131/ZN (OAI22_X1)                          0.04       1.34 r
+  decode/muxA/U132/ZN (INV_X1)                            0.02       1.36 f
+  decode/muxA/mux_out[58] (mux2to1_0)                     0.00       1.36 f
+  decode/br_check/data_rs1[58] (Branch_check)             0.00       1.36 f
+  decode/br_check/U81/Z (XOR2_X1)                         0.07       1.43 f
+  decode/br_check/U83/ZN (NOR3_X1)                        0.06       1.49 r
+  decode/br_check/U84/ZN (NAND3_X1)                       0.04       1.53 f
+  decode/br_check/U91/ZN (NOR4_X1)                        0.06       1.59 r
+  decode/br_check/U92/ZN (AOI21_X1)                       0.03       1.62 f
+  decode/br_check/U93/ZN (AOI21_X1)                       0.06       1.69 r
+  decode/br_check/U1/Z (BUF_X4)                           0.16       1.85 r
+  decode/br_check/Branch_taken (Branch_check)             0.00       1.85 r
+  decode/pc_sel (ID_Stage)                                0.00       1.85 r
+  pipeIF/clear (pipe_if_id)                               0.00       1.85 r
+  pipeIF/pc4_reg/clear (regN_load_N64_1)                  0.00       1.85 r
+  pipeIF/pc4_reg/U28/ZN (INV_X1)                          0.05       1.89 f
+  pipeIF/pc4_reg/U29/ZN (NAND2_X1)                        0.03       1.93 r
+  pipeIF/pc4_reg/U30/ZN (INV_X1)                          0.03       1.96 f
+  pipeIF/pc4_reg/U15/Z (CLKBUF_X1)                        0.10       2.06 f
+  pipeIF/pc4_reg/U31/ZN (NAND2_X1)                        0.05       2.11 r
+  pipeIF/pc4_reg/U32/ZN (OAI21_X1)                        0.03       2.15 f
+  pipeIF/pc4_reg/S_out_reg[2]/D (DFFR_X1)                 0.01       2.15 f
+  data arrival time                                                  2.15
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  pipeIF/pc4_reg/S_out_reg[2]/CK (DFFR_X1)                0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -2.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.27
+
+
+1
