@@ -18,7 +18,7 @@ signal cmp,beq_t : std_logic;
 
 begin 
 
-process(data_rs1,data_rs2,Branch_JAL,Branch_BEQ) 
+process(data_rs1,data_rs2) 
 
 begin 
 	

@@ -30,8 +30,8 @@ end component;
 component pipe_if_id
 port(	clk : in std_logic;
 		rst_n : in std_logic;
-		clear : in std_logic;
 		load : in std_logic;
+		clear : in std_logic;
 		in_pc : in std_logic_vector(63 downto 0);
 		in_pc4 : in std_logic_vector(63 downto 0);
 		in_istruction : in std_logic_vector(31 downto 0);
@@ -49,6 +49,9 @@ port(	clk : in std_logic;
 		add_rd_in : in std_logic_vector(4 downto 0);
 		write_data : in std_logic_vector(63 downto 0);
 		reg_write_in : in std_logic;
+		forward : in std_logic_vector(63 downto 0);
+		forward_selA : in std_logic;
+		forward_selB : in std_logic;
 		pc_jump : out std_logic_vector(63 downto 0);
 		pc_sel : out std_logic;
 		mem_read : out std_logic;
@@ -186,12 +189,17 @@ end component;
 component forwarding_unit
 port(	rs1 : IN std_logic_vector(4 downto 0);
 		rs2 : IN std_logic_vector(4 downto 0);
-		rd_exe : IN std_logic_vector(4 downto 0);
+		rs1_beq : in std_logic_vector(4 downto 0);
+		rs2_beq : in std_logic_vector(4 downto 0);
+		rd_exe : IN std_logic_vector(4 downto 0);			
 		rd_mem : IN std_logic_vector(4 downto 0);
+		rd_beq : in std_logic_vector(4 downto 0);
 		reg_write_exe : IN std_logic;
 		reg_write_mem : IN std_logic;
 		forward_a : OUT std_logic_vector(1 downto 0);
-		forward_b : OUT std_logic_vector(1 downto 0));
+		forward_a_beq : out std_logic;
+		forward_b : OUT std_logic_vector(1 downto 0);
+		forward_b_beq : out std_logic);
 end component;
 
 -- Signal definition
@@ -244,6 +252,7 @@ signal load_tmp, pc_load_tmp, nop_tmp : std_logic;
 
 -- Forwarding
 signal forwardA, forwardB : std_logic_vector(1 downto 0);
+signal forwardA_beq, forwardB_beq: std_logic;
 
 begin
 
@@ -251,10 +260,11 @@ begin
 
 fetch : IF_Stage port map(clk, rst_n, pc_jump_tmp, pc_mux_sel, pc_load_tmp, pc_if, pc4_if);
 
-pipeIF : pipe_if_id port map(clk, rst_n, pc_mux_sel, load_tmp, pc_if, pc4_if, istruction, pc_pipe_if, pc4_pipe_if, istruction_id);		
+pipeIF : pipe_if_id port map(clk, rst_n, load_tmp, pc_mux_sel, pc_if, pc4_if, istruction, pc_pipe_if, pc4_pipe_if, istruction_id);		
 
-decode : ID_Stage port map(clk, rst_n, pc_pipe_if, istruction_id, nop_tmp, add_rd_pipe_mem, write_data_rf, 
-reg_write_pipe_mem, pc_jump_tmp, pc_mux_sel, mem_read_id, mem_write_id, mux_memToReg_id, aluOp_id, alu_src1_id, alu_src2_id, reg_write_id, rs1_id, rs2_id, rs1_add_id, rs2_add_id, imm_id);
+decode : ID_Stage port map(clk, rst_n, pc_pipe_if, istruction_id, nop_tmp, add_rd_pipe_mem, write_data_rf, reg_write_pipe_mem,
+alu_result_ex, forwardA_beq, forwardB_beq, pc_jump_tmp, pc_mux_sel, mem_read_id, mem_write_id, mux_memToReg_id, aluOp_id, 
+alu_src1_id, alu_src2_id, reg_write_id, rs1_id, rs2_id, rs1_add_id, rs2_add_id, imm_id);
 
 extra_bit_id <= (istruction_id(30) & istruction_id(14 downto 12));
 
@@ -285,6 +295,7 @@ write_back : WB_Stage port map(pc4_pipe_mem, mux_memToReg_pipe_mem, alu_result_p
 hazards : Hazard_Detection_Unit port map(istruction_id(19 downto 15), istruction_id(24 downto 20), add_rd_pipe_id, mem_read_pipe_id, load_tmp, 
 pc_load_tmp, nop_tmp);
 
-forwarding : forwarding_unit port map(add_rs1_pipe_id, add_rs2_pipe_id, add_rd_pipe_ex, add_rd_pipe_mem, reg_write_pipe_ex, reg_write_pipe_mem, forwardA, forwardB);
+forwarding : forwarding_unit port map(add_rs1_pipe_id, add_rs2_pipe_id, rs1_add_id, rs2_add_id, add_rd_pipe_ex, add_rd_pipe_mem, add_rd_pipe_id,
+reg_write_pipe_ex, reg_write_pipe_mem, forwardA, forwardA_beq, forwardB, forwardB_beq);
 
 end beh;

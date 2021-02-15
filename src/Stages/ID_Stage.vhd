@@ -11,6 +11,9 @@ port(	clk : in std_logic;
 		add_rd_in : in std_logic_vector(4 downto 0);
 		write_data : in std_logic_vector(63 downto 0);
 		reg_write_in : in std_logic;
+		forward : in std_logic_vector(63 downto 0);
+		forward_selA : in std_logic;
+		forward_selB : in std_logic;
 		pc_jump : out std_logic_vector(63 downto 0);
 		pc_sel : out std_logic;
 		mem_read : out std_logic;
@@ -85,6 +88,13 @@ port(	a : in std_logic_vector(9 downto 0);
 		mux_out : out std_logic_vector(9 downto 0));
 end component;
 
+component mux2to1
+port(	a : in std_logic_vector(63 downto 0);
+		b : in std_logic_vector(63 downto 0);
+		sel : in std_logic;
+		mux_out : out std_logic_vector(63 downto 0));
+end component;
+
 signal rs1_tmp,rs2_tmp,imm_tmp : std_logic_vector(63 downto 0);
 signal mux_memToReg_tmp : std_logic_vector(1 downto 0);
 signal aluOp_tmp : std_logic_vector(2 downto 0);
@@ -92,6 +102,7 @@ signal mem_read_tmp,mem_write_tmp : std_logic;
 signal alu_src1_tmp,alu_src2_tmp,reg_write_out_tmp : std_logic;
 signal control_string_in, control_string_out : std_logic_vector(9 downto 0);
 signal branch_jal,branch_beq : std_logic;
+signal forwardA_tmp, forwardB_tmp : std_logic_vector(63 downto 0);
 
 begin
 
@@ -105,7 +116,10 @@ control_string_in <= mem_read_tmp & mem_write_tmp & mux_memToReg_tmp & aluOp_tmp
 
 ctrl_mux : mux_controls port map("0000000000", control_string_in, nop_ctrl, control_string_out);
 
-br_check : Branch_check port map(rs1_tmp, rs2_tmp, branch_jal, branch_beq, pc_sel);
+muxA : mux2to1 port map(rs1_tmp, forward, forward_selA, forwardA_tmp);
+muxB : mux2to1 port map(rs2_tmp, forward, forward_selB, forwardB_tmp);
+
+br_check : Branch_check port map(forwardA_tmp, forwardB_tmp, branch_jal, branch_beq, pc_sel);
 
 addr : adder port map('0', pc_in, imm_tmp, pc_jump);
 

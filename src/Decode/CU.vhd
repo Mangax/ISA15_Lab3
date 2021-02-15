@@ -66,7 +66,7 @@ case Opcode is
 		   ALU_src2 <= '1';
 		   RF_wr <= '0';
 
-	when "1100111" => Br_JAL <= '0'; 	-- beq
+	when "1100011" => Br_JAL <= '0'; 	-- beq
 		   Br_BEQ <= '1';
 		   Mem_rd <= '0'; 
 		   Mem_wr <= '0'; 
@@ -83,7 +83,7 @@ case Opcode is
 		   MUX_memtoreg <= "11";
 		   ALU_op <= "101";
 		   ALU_src1 <= '0';
-		   ALU_src2 <= '0';
+		   ALU_src2 <= '1';
 		   RF_wr <= '1';
 
 	when "1101111" => Br_JAL <= '1'; 	-- jal

@@ -12,5 +12,6 @@ END slt_comparator;
 -- 1 if the carry is 0 (the first input is grater than the second one) 
 ARCHITECTURE bhv OF slt_comparator IS
 BEGIN
-    o <= (others => not s);
+    o(63 downto 1) <= (others => '0');
+	o(0) <= s;
 END bhv;

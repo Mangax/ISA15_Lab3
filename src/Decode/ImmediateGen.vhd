@@ -24,7 +24,7 @@ begin
 				immI when "0000011", -- load
 				immS when "0100011",
 				immB when "1100011",
-				immJ when "1100111",
+				immJ when "1101111",
 				immU when "0110111", -- lui
 				immU when "0010111", -- auipc
 				(others => '0') when others;

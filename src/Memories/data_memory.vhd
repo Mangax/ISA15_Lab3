@@ -48,16 +48,16 @@ signal limited_address : std_logic_vector(6 downto 0);
 begin
 
 -- The address is characterized by the first bits of the input
-limited_address <= address(6 downto 0);
+limited_address <= address(8 downto 2);
 
---mem_process : process(mem_read, mem_write)
---begin
-	--if(mem_read = '1') then
-		data <= data_array(to_integer(unsigned(limited_address)));
-	--elsif(mem_write = '1') then
-		--data_array(to_integer(unsigned(limited_address))) <= write_data;
-	--end if;
---end process;
+mem_process : process(mem_write)
+begin
+	if(mem_write = '1') then
+		data_array(to_integer(unsigned(limited_address))) <= write_data;
+	end if;
+end process;
+
+data <= data_array(to_integer(unsigned(limited_address)));
 
 end beh;
 

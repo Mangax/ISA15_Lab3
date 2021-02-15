@@ -11,7 +11,7 @@ end istruction_memory;
 
 architecture beh of istruction_memory is
 
-type mem_array is array(0 to 2**7 - 1) of std_logic_vector(31 downto 0);
+type mem_array is array(0 to 2**5 - 1) of std_logic_vector(31 downto 0);
 
 -- We fill the first cells of the istruction memory by reading the file containing the istructions of the program in binary form
 -- Then we fill the exceeding cells with NOPS (ADDI x0, x0, 0)
@@ -37,13 +37,13 @@ begin
 end init_mem;
 
 signal istr_array : mem_array := init_mem;
-signal address : std_logic_vector(6 downto 0);
+signal address : std_logic_vector(4 downto 0);
 
 begin
 
 -- The address is characterized by the first bits of the pc
 -- We divide th pc by 4 because the istruction has 4 Bytes
-address <= pc(8 downto 2);
+address <= pc(6 downto 2);
 
 istruction <= istr_array(to_integer(unsigned(address)));
 

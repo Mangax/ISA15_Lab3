@@ -7,6 +7,7 @@ generic(N : integer := 32);
 port (	clk : IN std_logic;			-- clock
 		rst_n : IN std_logic;
 		load : in std_logic;
+		clear : in std_logic;
 		S_in : IN std_logic_vector (N - 1  downto 0);
 		S_out : OUT std_logic_vector (N - 1 downto 0));
 end regN_load;
@@ -19,7 +20,12 @@ begin
 	if (rst_n = '0') then
 		s_out <= (others => '0');
 	elsif (load = '1' and rising_edge(CLK)) then	-- normal operation synchronous with clock
-			S_out <= S_in; 
+		if(clear = '1') then
+			S_out(N - 1 downto 7) <= (others => '0');
+			S_out(6 downto 0) <= "0010011";
+		else
+			S_out <= S_in;
+		end if;
 	end if; 
 end process;
 
