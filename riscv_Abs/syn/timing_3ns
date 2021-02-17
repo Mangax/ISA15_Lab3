@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Wed Feb 17 01:14:43 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: decode/rf/rf_reg[14][40]
+              (rising edge-triggered flip-flop clocked by MY_CLK')
+  Endpoint: pipeIF/pc4_reg/S_out_reg[5]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK' (rise edge)                               1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  decode/rf/rf_reg[14][40]/CK (DFFR_X1)                   0.00 #     1.50 r
+  decode/rf/rf_reg[14][40]/Q (DFFR_X1)                    0.09       1.59 f
+  decode/rf/U6809/ZN (AOI22_X1)                           0.06       1.65 r
+  decode/rf/U6837/ZN (OAI221_X1)                          0.05       1.70 f
+  decode/rf/U6854/ZN (NOR4_X1)                            0.10       1.80 r
+  decode/rf/U6853/ZN (NAND2_X1)                           0.03       1.83 f
+  decode/rf/mux_rs1/a[40] (mux2to1_1)                     0.00       1.83 f
+  decode/rf/mux_rs1/U60/ZN (AOI22_X1)                     0.04       1.87 r
+  decode/rf/mux_rs1/U81/ZN (INV_X1)                       0.03       1.90 f
+  decode/rf/mux_rs1/mux_out[40] (mux2to1_1)               0.00       1.90 f
+  decode/rf/data_rs1[40] (register_file)                  0.00       1.90 f
+  decode/muxA/a[40] (mux2to1_0)                           0.00       1.90 f
+  decode/muxA/U74/ZN (NAND2_X1)                           0.03       1.93 r
+  decode/muxA/U75/ZN (INV_X1)                             0.03       1.95 f
+  decode/muxA/U76/ZN (OAI22_X1)                           0.06       2.01 r
+  decode/muxA/U77/ZN (INV_X1)                             0.03       2.04 f
+  decode/muxA/mux_out[40] (mux2to1_0)                     0.00       2.04 f
+  decode/br_check/data_rs1[40] (Branch_check)             0.00       2.04 f
+  decode/br_check/U42/Z (XOR2_X1)                         0.07       2.11 f
+  decode/br_check/U44/ZN (NOR4_X1)                        0.09       2.20 r
+  decode/br_check/U45/ZN (NAND4_X1)                       0.05       2.25 f
+  decode/br_check/U58/ZN (NOR4_X1)                        0.06       2.31 r
+  decode/br_check/U90/ZN (OAI22_X1)                       0.04       2.35 f
+  decode/br_check/U91/ZN (AOI21_X1)                       0.06       2.41 r
+  decode/br_check/U1/Z (BUF_X4)                           0.16       2.57 r
+  decode/br_check/Branch_taken (Branch_check)             0.00       2.57 r
+  decode/pc_sel (ID_Stage)                                0.00       2.57 r
+  pipeIF/clear (pipe_if_id)                               0.00       2.57 r
+  pipeIF/pc4_reg/clear (regN_load_N64_1)                  0.00       2.57 r
+  pipeIF/pc4_reg/U28/ZN (INV_X1)                          0.05       2.62 f
+  pipeIF/pc4_reg/U29/ZN (NAND2_X1)                        0.03       2.66 r
+  pipeIF/pc4_reg/U30/ZN (INV_X1)                          0.03       2.69 f
+  pipeIF/pc4_reg/U15/Z (CLKBUF_X1)                        0.10       2.78 f
+  pipeIF/pc4_reg/U38/ZN (NAND2_X1)                        0.05       2.84 r
+  pipeIF/pc4_reg/U39/ZN (OAI21_X1)                        0.03       2.87 f
+  pipeIF/pc4_reg/S_out_reg[5]/D (DFFR_X1)                 0.01       2.88 f
+  data arrival time                                                  2.88
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  pipeIF/pc4_reg/S_out_reg[5]/CK (DFFR_X1)                0.00       2.93 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

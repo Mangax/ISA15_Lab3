@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Mon Feb 15 23:30:50 2021
+#@ # Date:   Wed Feb 17 00:25:19 2021
 #@ # Run by: isa15@localhost.localdomain
 #@ 
 
@@ -6628,15 +6628,15 @@ source /software/synopsys/syn_current_64.18/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /software/synopsys/syn_current_64.18/admin/setup/.synopsys_dc.setup
 
-source /home/isa15/Laboratori/Lab3/syn/.synopsys_dc.setup
-#@ # -- Starting source /home/isa15/Laboratori/Lab3/syn/.synopsys_dc.setup
+source /home/isa15/Laboratori/Lab3/riscv_noAbs/syn/.synopsys_dc.setup
+#@ # -- Starting source /home/isa15/Laboratori/Lab3/riscv_noAbs/syn/.synopsys_dc.setup
 
 #@ define_design_lib WORK -path ./work
 #@ set search_path [list . /software/synopsys/syn_current_64.18/libraries/syn /software/dk/nangate45/synopsys ]
 #@ set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm_nowlm.db" "dw_foundation.sldb" ]
 #@ set target_library [list "NangateOpenCellLibrary_typical_ecsm_nowlm.db" ]
 #@ set synthetic_library [list "dw_foundation.sldb" ]
-#@ # -- End source /home/isa15/Laboratori/Lab3/syn/.synopsys_dc.setup
+#@ # -- End source /home/isa15/Laboratori/Lab3/riscv_noAbs/syn/.synopsys_dc.setup
 
 gui_start
 #@ # -- Starting source /software/synopsys/syn_current_64.18/auxx/tcllib/lib/itk4.0.1/itk.tcl
@@ -43001,64 +43001,16 @@ gui_start
 
 sh mkdir WORK
 define_design_lib WORK -path ./WORK
-analyze -library WORK -format vhdl {/home/isa15/Laboratori/Lab3/src/common/regN_load.vhd /home/isa15/Laboratori/Lab3/src/common/adder.vhd /home/isa15/Laboratori/Lab3/src/common/mux4to1.vhd /home/isa15/Laboratori/Lab3/src/common/regN.vhd /home/isa15/Laboratori/Lab3/src/common/mux3to1.vhd /home/isa15/Laboratori/Lab3/src/common/mux2to1.vhd /home/isa15/Laboratori/Lab3/src/Special_units/forwarding_unit.vhd /home/isa15/Laboratori/Lab3/src/Decode/register_file.vhd /home/isa15/Laboratori/Lab3/src/Decode/CU.vhd /home/isa15/Laboratori/Lab3/src/Decode/Branch_check.vhd /home/isa15/Laboratori/Lab3/src/Decode/ImmediateGen.vhd /home/isa15/Laboratori/Lab3/src/Execute/slt_comparator.vhd /home/isa15/Laboratori/Lab3/src/Execute/ALU_CU.vhd /home/isa15/Laboratori/Lab3/src/Execute/bmux.vhd /home/isa15/Laboratori/Lab3/src/Execute/out_mux.vhd /home/isa15/Laboratori/Lab3/src/Stages/ID_Stage.vhd /home/isa15/Laboratori/Lab3/src/Stages/IF_Stage.vhd /home/isa15/Laboratori/Lab3/src/Stages/EX_Stage.vhd /home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_if_id.vhd /home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_id_ex.vhd /home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_ex_mem.vhd /home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_mem_wb.vhd /home/isa15/Laboratori/Lab3/src/Stages/WB_Stage.vhd /home/isa15/Laboratori/Lab3/src/Execute/alu.vhd /home/isa15/Laboratori/Lab3/src/Decode/mux_controls.vhd /home/isa15/Laboratori/Lab3/src/Fetch/PC_reg.vhd /home/isa15/Laboratori/Lab3/src/Special_units/Hazard_Detection_Unit.vhd /home/isa15/Laboratori/Lab3/src/common/reg.vhd}
-analyze -library WORK -format vhdl {/home/isa15/Laboratori/Lab3/src/RISCV.vhd}
-set power_preserve_rtl_hier_names true
-elaborate riscv -arch beh -lib WORK > ./elaborate.txt
+analyze -library WORK -format vhdl {/home/isa15/Laboratori/Lab3/riscv_noAbs/src/Special_units/forwarding_unit.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/regN_load.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/adder.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/mux4to1.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/regN.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/mux3to1.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/mux2to1.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Decode/register_file.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Decode/CU.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Decode/Branch_check.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Decode/ImmediateGen.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Execute/slt_comparator.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Execute/ALU_CU.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Execute/bmux.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Execute/out_mux.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Stages/ID_Stage.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Stages/IF_Stage.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Stages/EX_Stage.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Pipeline_registers/pipe_if_id.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Pipeline_registers/pipe_id_ex.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Pipeline_registers/pipe_ex_mem.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Pipeline_registers/pipe_mem_wb.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Stages/WB_Stage.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Execute/alu.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Decode/mux_controls.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Fetch/PC_reg.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/common/reg.vhd /home/isa15/Laboratori/Lab3/riscv_noAbs/src/Special_units/Hazard_Detection_Unit.vhd}
+analyze -library WORK -format vhdl {/home/isa15/Laboratori/Lab3/riscv_noAbs/src/RISCV.vhd}
+set preserve_rtl_hier_names true
+elaborate riscv -arch beh -lib WORK
+change_selection [get_s RISCV]
 change_selection [get_s RISCV]
 gui_zoom -window [gui_get_current_window -view] -full
-change_selection [get_s RISCV]
-gui_zoom -window [gui_get_current_window -view] -full
-change_selection [get_s decode]
-gui_zoom -window [gui_get_current_window -view] -full
-change_selection [get_s fetch]
-change_selection [get_s execute]
-gui_zoom -window [gui_get_current_window -view] -full
-change_selection [get_s forwarding]
-gui_zoom -window [gui_get_current_window -view] -full
-change_selection [get_s write_back]
-change_selection [get_s hazards]
-change_selection [get_s write_back]
-create_clock -name MY_CLK -period 0 clk
-set_dont_touch_network MY_CLK
-set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-set_load $OLOAD [all_outputs]
-compile
-report_timing > timing_0ns.txt
-report_area > area_0ns.txt
-create_clock -name MY_CLK -period 2.6 clk
-set_dont_touch_network MY_CLK
-set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-set_load $OLOAD [all_outputs]
-compile
-report_timing > timing_2_6ns.txt
-report_area > area_2_6ns.txt
-create_clock -name MY_CLK -period 2.7 clk
-set_dont_touch_network MY_CLK
-set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-set_load $OLOAD [all_outputs]
-compile
-report_timing > timing_2_7ns.txt
-report_area > area_2_7ns.txt
-create_clock -name MY_CLK -period 2.8 clk
-set_dont_touch_network MY_CLK
-set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-set_load $OLOAD [all_outputs]
-compile
-report_timing > timing_2_8ns.txt
-report_area > area_2_8ns.txt
+create_clock -name MY_CLK -period 2.9 CLK.
+create_clock -name MY_CLK -period 2.9 CLK
+create_clock -name MY_CLK -period 2.9 clk
 create_clock -name MY_CLK -period 2.9 clk
 set_dont_touch_network MY_CLK
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]
@@ -43067,5 +43019,11 @@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
 compile
-report_timing > timing_2_9ns.txt
-report_area > area_2_9ns.txt
+timing_report
+report_timing
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ../netlist/riscv.sdf
+write_sdf ../netlist/riscv.sdf
+write -f verilog -hierarchy -output ../netlist/riscv.v
+write_sdc ../netlist/riscv.sdc

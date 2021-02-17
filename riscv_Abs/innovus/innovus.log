@@ -1,0 +1,1604 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Wed Feb 17 01:54:12 2021
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_design_netlisttype verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell RISCV
+<CMD> set init_verilog ../netlist/RISCV.v
+<CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> set init_gnd_net VSS
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Wed Feb 17 01:54:52 2021
+viaInitial ends at Wed Feb 17 01:54:52 2021
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.39min, fe_real=0.67min, fe_mem=503.9M) ***
+**ERROR: (IMPSYT-16038):	The specified file '../netlist/RISCV.v' could not be found. Check your file system, correct the file name.
+**ERROR: (IMPIMEX-7008):	No netlist files are found.
+<CMD> init_design
+
+Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+**WARN: (IMPLF-119):	LAYER 'poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'active' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal7' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via7' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal8' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via8' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal9' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'via9' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-119) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**ERROR: (IMPLF-223):	The LEF via 'via1_4' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_3' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_5' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_6' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_7' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via1_8' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_8' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_4' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_5' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_7' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_6' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via2_3' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via3_2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'via3_0' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-151):	The viaRule 'Via1Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via1Array-1' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via1Array-2' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via1Array-3' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via1Array-4' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via2Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via2Array-1' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via2Array-2' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via2Array-3' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via2Array-4' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via3Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via3Array-1' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via3Array-2' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via4Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via5Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via6Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via7Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via8Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'Via9Array-0' has been defined, the content will be skipped.
+**WARN: (IMPLF-58):	MACRO 'AND2_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND2_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND2_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND3_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND3_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND3_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND4_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND4_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AND4_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'ANTENNA_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI222_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-61):	134 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.43min, fe_real=1.10min, fe_mem=503.9M) ***
+#% Begin Load netlist data ... (date=02/17 01:55:18, mem=417.6M)
+*** Begin netlist parsing (mem=503.9M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../netlist/RISCV.v'
+
+*** Memory Usage v#1 (Current mem = 512.934M, initial mem = 179.684M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:01.0, mem=512.9M) ***
+#% End Load netlist data ... (date=02/17 01:55:19, total cpu=0:00:00.3, real=0:00:01.0, peak res=427.9M, current mem=427.9M)
+Set top cell to RISCV.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell RISCV ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 15945 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 528.348M, initial mem = 179.684M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1 0.6 5 5 5 5
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.8 bottom 0.8 left 0.8 right 0.8} -spacing {top 0.8 bottom 0.8 left 0.8 right 0.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |        4       |       NA       |
+|  via1  |        8       |        0       |
+| metal2 |        4       |       NA       |
++--------+----------------+----------------+
+Starting snapshot creation...
+<CMD> getDrawView
+<CMD> setDrawView fplan
+<CMD> win
+<CMD> dumpToGIF ./ss_rings.fplan.gif
+<CMD> getDrawView
+<CMD> setDrawView amoeba
+<CMD> win
+<CMD> dumpToGIF ./ss_rings.amoeba.gif
+<CMD> getDrawView
+<CMD> setDrawView place
+<CMD> win
+<CMD> dumpToGIF ./ss_rings.place.gif
+Completed snapshot creation (cpu = 0:0:0, real = 0:0:1, mem = 739.01M, memory increment = 9.28M)
+Saving snapshot for fplan view to ss_rings.fplan.gif
+Saving snapshot for amoeba view to ss_rings.amoeba.gif
+Saving snapshot for place view to ss_rings.place.gif
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+*** Begin SPECIAL ROUTE on Wed Feb 17 01:58:29 2021 ***
+SPECIAL ROUTE ran on directory: /home/isa15/Laboratori/Lab3/riscv_Abs/innovus
+SPECIAL ROUTE ran on machine: localhost.localdomain (Linux 3.10.0-957.5.1.el7.x86_64 x86_64 1.99Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1481.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 20 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 38 used
+Read in 38 components
+  38 core components: 38 unplaced, 0 placed, 0 fixed
+Read in 292 logical pins
+Read in 292 nets
+Read in 2 special nets, 2 routed
+Read in 76 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 324
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 162
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1491.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 486 wires.
+ViaGen created 324 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |       486      |       NA       |
+|  via1  |       324      |        0       |
++--------+----------------+----------------+
+Starting snapshot creation...
+<CMD> getDrawView
+<CMD> setDrawView fplan
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.fplan.gif
+<CMD> getDrawView
+<CMD> setDrawView amoeba
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.amoeba.gif
+<CMD> getDrawView
+<CMD> setDrawView place
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.place.gif
+Completed snapshot creation (cpu = 0:0:0, real = 0:0:1, mem = 750.31M, memory increment = 0.00M)
+Saving snapshot for fplan view to ss_routing.fplan.gif
+Saving snapshot for amoeba view to ss_routing.amoeba.gif
+Saving snapshot for place view to ss_routing.place.gif
+<CMD> setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+**WARN: (IMPSP-9513):	Timing constraint file does not exist
+**WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+*** Starting placeDesign default flow ***
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#10 (mem=750.3M)" ...
+No user setting net weight.
+Options: clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=15945 (0 fixed + 15945 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=16319 #term=60969 #term/net=3.74, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=292
+stdCell: 15945 single + 0 double + 0 multi
+Total standard cell length = 21.9066 (mm), area = 0.0307 (mm^2)
+Average module density = 0.600.
+Density for the design = 0.600.
+       = stdcell_area 115298 sites (30669 um^2) / alloc_area 192234 sites (51134 um^2).
+Pin Density = 0.3172.
+            = total # of pins 60969 / total area 192234.
+=== lastAutoLevel = 9 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 2.009e-08 (6.43e-09 1.37e-08)
+              Est.  stn bbox = 2.100e-08 (6.73e-09 1.43e-08)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 762.8M
+Iteration  2: Total net bbox = 2.009e-08 (6.43e-09 1.37e-08)
+              Est.  stn bbox = 2.100e-08 (6.73e-09 1.43e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 762.8M
+Iteration  3: Total net bbox = 1.771e+02 (8.84e+01 8.87e+01)
+              Est.  stn bbox = 2.081e+02 (1.03e+02 1.05e+02)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 782.8M
+Iteration  4: Total net bbox = 2.096e+05 (9.22e+04 1.17e+05)
+              Est.  stn bbox = 2.602e+05 (1.17e+05 1.44e+05)
+              cpu = 0:00:07.7 real = 0:00:08.0 mem = 782.8M
+Iteration  5: Total net bbox = 2.619e+05 (1.14e+05 1.48e+05)
+              Est.  stn bbox = 3.320e+05 (1.46e+05 1.86e+05)
+              cpu = 0:00:08.1 real = 0:00:09.0 mem = 782.8M
+Iteration  6: Total net bbox = 2.755e+05 (1.15e+05 1.60e+05)
+              Est.  stn bbox = 3.523e+05 (1.49e+05 2.03e+05)
+              cpu = 0:00:10.0 real = 0:00:11.0 mem = 787.8M
+Iteration  7: Total net bbox = 3.612e+05 (1.72e+05 1.89e+05)
+              Est.  stn bbox = 4.428e+05 (2.10e+05 2.33e+05)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 792.0M
+Iteration  8: Total net bbox = 3.612e+05 (1.72e+05 1.89e+05)
+              Est.  stn bbox = 4.428e+05 (2.10e+05 2.33e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 792.0M
+Iteration  9: Total net bbox = 3.656e+05 (1.76e+05 1.90e+05)
+              Est.  stn bbox = 4.490e+05 (2.15e+05 2.34e+05)
+              cpu = 0:00:10.8 real = 0:00:11.0 mem = 792.0M
+Iteration 10: Total net bbox = 3.656e+05 (1.76e+05 1.90e+05)
+              Est.  stn bbox = 4.490e+05 (2.15e+05 2.34e+05)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 792.0M
+Iteration 11: Total net bbox = 3.681e+05 (1.77e+05 1.91e+05)
+              Est.  stn bbox = 4.523e+05 (2.17e+05 2.35e+05)
+              cpu = 0:00:08.4 real = 0:00:09.0 mem = 794.0M
+Iteration 12: Total net bbox = 3.681e+05 (1.77e+05 1.91e+05)
+              Est.  stn bbox = 4.523e+05 (2.17e+05 2.35e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 794.0M
+Iteration 13: Total net bbox = 3.778e+05 (1.81e+05 1.97e+05)
+              Est.  stn bbox = 4.618e+05 (2.20e+05 2.41e+05)
+              cpu = 0:00:14.7 real = 0:00:16.0 mem = 799.1M
+Iteration 14: Total net bbox = 3.778e+05 (1.81e+05 1.97e+05)
+              Est.  stn bbox = 4.618e+05 (2.20e+05 2.41e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 799.1M
+*** cost = 3.778e+05 (1.81e+05 1.97e+05) (cpu for global=0:01:02) real=0:01:08***
+Solver runtime cpu: 0:00:57.3 real: 0:01:02
+Core Placement runtime cpu: 0:01:00 real: 0:01:07
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:01:55 mem=799.1M) ***
+Total net bbox length = 3.779e+05 (1.809e+05 1.970e+05) (ext = 8.118e+04)
+Density distribution unevenness ratio = 7.018%
+Move report: Detail placement moves 15945 insts, mean move: 0.85 um, max move: 27.21 um
+	Max move on inst (decode_rf_U346): (88.88, 197.87) --> (94.05, 175.84)
+	Runtime: CPU: 0:00:06.4 REAL: 0:00:07.0 MEM: 799.1MB
+Summary Report:
+Instances move: 15945 (out of 15945 movable)
+Instances flipped: 0
+Mean displacement: 0.85 um
+Max displacement: 27.21 um (Instance: decode_rf_U346) (88.8755, 197.874) -> (94.05, 175.84)
+	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: BUF_X1
+Total net bbox length = 3.723e+05 (1.751e+05 1.972e+05) (ext = 8.068e+04)
+Runtime: CPU: 0:00:06.4 REAL: 0:00:07.0 MEM: 799.1MB
+*** Finished refinePlace (0:02:01 mem=799.1M) ***
+*** End of Placement (cpu=0:01:09, real=0:01:16, mem=799.1M) ***
+default core: bins with density >  0.75 = 4.84 % ( 14 / 289 )
+Density distribution unevenness ratio = 6.930%
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] Layer10 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=336 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=16157  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 16157 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=270  L2=380  L3=280  L4=560  L5=560  L6=560  L7=1680  L8=1680  L9=3200  L10=3360
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 16157 net(s) in layer range [2, 10]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.02% H + 0.04% V. EstWL: 3.552388e+05um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon         OverCon            
+[NR-eGR]                 #Gcell          #Gcell     %Gcell
+[NR-eGR] Layer              (1)             (3)    OverCon 
+[NR-eGR] ---------------------------------------------------
+[NR-eGR] Layer1       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2     115( 0.41%)       1( 0.00%)   ( 0.41%) 
+[NR-eGR] Layer3      23( 0.08%)       1( 0.00%)   ( 0.09%) 
+[NR-eGR] Layer4      73( 0.26%)       1( 0.00%)   ( 0.26%) 
+[NR-eGR] Layer5       8( 0.03%)       0( 0.00%)   ( 0.03%) 
+[NR-eGR] Layer6      15( 0.05%)       0( 0.00%)   ( 0.05%) 
+[NR-eGR] Layer7       5( 0.02%)       0( 0.00%)   ( 0.02%) 
+[NR-eGR] Layer8       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer9       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer10       0( 0.00%)       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------
+[NR-eGR] Total      239( 0.10%)       3( 0.00%)   ( 0.10%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.01% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.01% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 60554
+[NR-eGR] Layer2(metal2)(V) length: 8.209013e+04um, number of vias: 78323
+[NR-eGR] Layer3(metal3)(H) length: 1.204045e+05um, number of vias: 30383
+[NR-eGR] Layer4(metal4)(V) length: 6.069779e+04um, number of vias: 6665
+[NR-eGR] Layer5(metal5)(H) length: 3.529767e+04um, number of vias: 5801
+[NR-eGR] Layer6(metal6)(V) length: 5.818026e+04um, number of vias: 846
+[NR-eGR] Layer7(metal7)(H) length: 5.431266e+03um, number of vias: 509
+[NR-eGR] Layer8(metal8)(V) length: 9.035846e+03um, number of vias: 6
+[NR-eGR] Layer9(metal9)(H) length: 2.520000e+00um, number of vias: 0
+[NR-eGR] Layer10(metal10)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 3.711400e+05um, number of vias: 183087
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+End of congRepair (cpu=0:00:01.4, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 1:10, real = 0: 1:18, mem = 811.2M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> fit
+Starting snapshot creation...
+<CMD> getDrawView
+<CMD> setDrawView fplan
+<CMD> win
+<CMD> dumpToGIF ./ss_placing.fplan.gif
+<CMD> getDrawView
+<CMD> setDrawView amoeba
+<CMD> win
+<CMD> dumpToGIF ./ss_placing.amoeba.gif
+<CMD> getDrawView
+<CMD> setDrawView place
+<CMD> win
+<CMD> dumpToGIF ./ss_placing.place.gif
+Completed snapshot creation (cpu = 0:0:1, real = 0:0:2, mem = 814.51M, memory increment = 2.28M)
+Saving snapshot for fplan view to ss_placing.fplan.gif
+Saving snapshot for amoeba view to ss_placing.amoeba.gif
+Saving snapshot for place view to ss_placing.place.gif
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS
+**WARN: (IMPOPT-576):	292 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+Updating RC grid for preRoute extraction ...
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	istruction[31] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[30] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[29] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[28] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[27] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[26] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[25] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[24] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[23] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[22] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[21] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[20] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[19] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[18] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[17] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[16] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[15] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[14] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[13] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 701.3M, totSessionCpu=0:02:08 **
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yetInfo: Destroy the CCOpt slew target map.
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILLCELL_X8 FILLCELL_X4 FILLCELL_X32 FILLCELL_X2 FILLCELL_X16 FILLCELL_X1 -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 29 filler insts (cell FILLCELL_X32 / prefix FILLER).
+*INFO:   Added 139 filler insts (cell FILLCELL_X16 / prefix FILLER).
+*INFO:   Added 2785 filler insts (cell FILLCELL_X8 / prefix FILLER).
+*INFO:   Added 7631 filler insts (cell FILLCELL_X4 / prefix FILLER).
+*INFO:   Added 20980 filler insts (cell FILLCELL_X1 / prefix FILLER).
+*INFO:   Added 0 filler inst  (cell FILLCELL_X2 / prefix FILLER).
+*INFO: Total 31564 filler insts added - prefix FILLER (CPU: 0:00:01.9).
+For 31564 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+Starting snapshot creation...
+<CMD> getDrawView
+<CMD> setDrawView fplan
+<CMD> win
+<CMD> dumpToGIF ./ss_filler.fplan.gif
+<CMD> getDrawView
+<CMD> setDrawView amoeba
+<CMD> win
+<CMD> dumpToGIF ./ss_filler.amoeba.gif
+<CMD> getDrawView
+<CMD> setDrawView place
+<CMD> win
+<CMD> dumpToGIF ./ss_filler.place.gif
+Completed snapshot creation (cpu = 0:0:1, real = 0:0:3, mem = 852.80M, memory increment = 2.28M)
+Saving snapshot for fplan view to ss_filler.fplan.gif
+Saving snapshot for amoeba view to ss_filler.amoeba.gif
+Saving snapshot for place view to ss_filler.place.gif
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+**WARN: (IMPTCM-77):	Option "-routeEcoOnlyInLayers" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 744.76 (MB), peak = 748.07 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: mulit-cut via swapping is disabled by user.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+Begin checking placement ... (start mem=852.8M, init mem=852.8M)
+*info: Placed = 47509         
+*info: Unplaced = 0           
+Placement Density:100.00%(51134/51134)
+Placement Density (including fixed std cells):100.00%(51134/51134)
+Finished checkPlace (cpu: total=0:00:00.4, vio checks=0:00:00.3; mem=852.8M)
+#**INFO: honoring user setting for routeWithTimingDriven set to false
+#**INFO: honoring user setting for routeWithSiDriven set to false
+**WARN: (IMPCK-8086):	The command changeUseClockNetStatus is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=852.8M) ***
+
+globalDetailRoute
+
+#setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+#setNanoRouteMode -routeReserveSpaceForMultiCut true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Wed Feb 17 02:02:29 2021
+#
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via1 and via2 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via1 and via2 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via2 and via3 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via2 and via3 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via3 and via4 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via3 and via4 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via4 and via5 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via4 and via5 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via5 and via6 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via5 and via6 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via6 and via7 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via6 and via7 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via7 and via8 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via7 and via8 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via8 and via9 were found.
+#WARNING (NRDB-924) Duplicate SAMENET inter-layer spacing between via8 and via9 were found.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[31] of net istruction[31] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[30] of net istruction[30] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[29] of net istruction[29] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[28] of net istruction[28] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[27] of net istruction[27] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[26] of net istruction[26] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[25] of net istruction[25] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[24] of net istruction[24] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[23] of net istruction[23] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[22] of net istruction[22] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[21] of net istruction[21] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[20] of net istruction[20] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[19] of net istruction[19] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[18] of net istruction[18] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[17] of net istruction[17] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[16] of net istruction[16] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[15] of net istruction[15] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[14] of net istruction[14] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[13] of net istruction[13] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/istruction[12] of net istruction[12] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#NanoRoute Version 17.11-s080_1 NR170721-2155/17_11-UB
+#Start routing data preparation on Wed Feb 17 02:02:30 2021
+#
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.0700.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.0700.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.0700.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.0700.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.0700.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.1400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal6 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal7 is not specified for width 0.4000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal6 is not specified for width 0.1400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal7 is not specified for width 0.4000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal7 is not specified for width 0.4000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal8 is not specified for width 0.4000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal7 is not specified for width 0.4000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal8 is not specified for width 0.4000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal8 is not specified for width 0.4000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal9 is not specified for width 0.8000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal8 is not specified for width 0.4000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal9 is not specified for width 0.8000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal9 is not specified for width 0.8000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal10 is not specified for width 0.8000.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal9 is not specified for width 0.8000.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal10 is not specified for width 0.8000.
+# metal1       H   Track-Pitch = 0.1400    Line-2-Via Pitch = 0.1350
+# metal2       V   Track-Pitch = 0.1900    Line-2-Via Pitch = 0.1400
+# metal3       H   Track-Pitch = 0.1400    Line-2-Via Pitch = 0.1400
+# metal4       V   Track-Pitch = 0.2800    Line-2-Via Pitch = 0.2800
+# metal5       H   Track-Pitch = 0.2800    Line-2-Via Pitch = 0.2800
+# metal6       V   Track-Pitch = 0.2800    Line-2-Via Pitch = 0.2800
+# metal7       H   Track-Pitch = 0.8400    Line-2-Via Pitch = 0.8000
+# metal8       V   Track-Pitch = 0.8400    Line-2-Via Pitch = 0.8000
+# metal9       H   Track-Pitch = 1.6000    Line-2-Via Pitch = 1.6000
+# metal10      V   Track-Pitch = 1.6800    Line-2-Via Pitch = 1.6000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.1400.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:02, memory = 786.84 (MB), peak = 818.21 (MB)
+#Merging special wires...
+#
+#Finished routing data preparation on Wed Feb 17 02:02:32 2021
+#
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:02
+#Increased memory = 10.55 (MB)
+#Total memory = 787.34 (MB)
+#Peak memory = 818.21 (MB)
+#
+#
+#Start global routing on Wed Feb 17 02:02:32 2021
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Wed Feb 17 02:02:32 2021
+#
+#Start routing resource analysis on Wed Feb 17 02:02:32 2021
+#
+#Routing resource analysis is done on Wed Feb 17 02:02:32 2021
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  metal1         H        1654          28       12656    78.78%
+#  metal2         V        1210          38       12656     1.74%
+#  metal3         H        1682           0       12656     0.00%
+#  metal4         V         847           0       12656     0.00%
+#  metal5         H         840           0       12656     0.00%
+#  metal6         V         847           0       12656     0.00%
+#  metal7         H         280           0       12656     0.00%
+#  metal8         V         281           0       12656     0.00%
+#  metal9         H         112           0       12656     0.00%
+#  metal10        V         113           0       12656     0.00%
+#  --------------------------------------------------------------
+#  Total                   7866       0.47%      126560     8.05%
+#
+#
+#
+#
+#Global routing data preparation is done on Wed Feb 17 02:02:32 2021
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 789.36 (MB), peak = 818.21 (MB)
+#
+#cpu time = 00:00:00, elapsed time = 00:00:01, memory = 789.90 (MB), peak = 818.21 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 798.15 (MB), peak = 818.21 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:31, elapsed time = 00:00:33, memory = 864.66 (MB), peak = 864.89 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:23, elapsed time = 00:00:25, memory = 875.45 (MB), peak = 875.53 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 269 (skipped).
+#Total number of routable nets = 16157.
+#Total number of nets in the design = 16426.
+#
+#16157 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default           16157  
+#-----------------------------
+#        Total           16157  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default           16157  
+#-----------------------------
+#        Total           16157  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)   OverCon
+#  ------------------------------------------------------------
+#  metal1        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal2       25(0.20%)      7(0.06%)      6(0.05%)   (0.31%)
+#  metal3        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal4        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal5        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal6        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal7        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal8        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal9        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal10       0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total     25(0.02%)      7(0.01%)      6(0.00%)   (0.03%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 3
+#  Overflow after GR: 0.00% H + 0.06% V
+#
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total wire length = 356045 um.
+#Total half perimeter of net bounding box = 304075 um.
+#Total wire length on LAYER metal1 = 113 um.
+#Total wire length on LAYER metal2 = 75440 um.
+#Total wire length on LAYER metal3 = 112461 um.
+#Total wire length on LAYER metal4 = 68349 um.
+#Total wire length on LAYER metal5 = 39505 um.
+#Total wire length on LAYER metal6 = 46089 um.
+#Total wire length on LAYER metal7 = 5397 um.
+#Total wire length on LAYER metal8 = 6300 um.
+#Total wire length on LAYER metal9 = 1329 um.
+#Total wire length on LAYER metal10 = 1060 um.
+#Total number of vias = 116728
+#Up-Via Summary (total 116728):
+#           
+#-----------------------
+# metal1          58742
+# metal2          40891
+# metal3           9736
+# metal4           3715
+# metal5           2631
+# metal6            543
+# metal7            322
+# metal8            100
+# metal9             48
+#-----------------------
+#                116728 
+#
+#Max overcon = 3 tracks.
+#Total overcon = 0.03%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:56
+#Elapsed time = 00:00:59
+#Increased memory = 88.20 (MB)
+#Total memory = 875.57 (MB)
+#Peak memory = 875.58 (MB)
+#
+#Finished global routing on Wed Feb 17 02:03:31 2021
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 817.18 (MB), peak = 875.60 (MB)
+#Start Track Assignment.
+#Done with 30926 horizontal wires in 1 hboxes and 33321 vertical wires in 1 hboxes.
+#Done with 6948 horizontal wires in 1 hboxes and 7713 vertical wires in 1 hboxes.
+#Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# metal1       116.56 	  1.86%  	  0.00% 	  1.86%
+# metal2     74738.14 	  0.12%  	  0.00% 	  0.00%
+# metal3    111241.10 	  0.05%  	  0.00% 	  0.00%
+# metal4     68760.82 	  0.03%  	  0.00% 	  0.00%
+# metal5     39787.65 	  0.00%  	  0.00% 	  0.00%
+# metal6     46315.70 	  0.01%  	  0.00% 	  0.00%
+# metal7      5522.05 	  0.00%  	  0.00% 	  0.00%
+# metal8      6368.14 	  0.00%  	  0.00% 	  0.00%
+# metal9      1356.41 	  0.00%  	  0.00% 	  0.00%
+# metal10     1080.18 	  0.00%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All      355286.76  	  0.05% 	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total wire length = 370679 um.
+#Total half perimeter of net bounding box = 304075 um.
+#Total wire length on LAYER metal1 = 10424 um.
+#Total wire length on LAYER metal2 = 74798 um.
+#Total wire length on LAYER metal3 = 115906 um.
+#Total wire length on LAYER metal4 = 69027 um.
+#Total wire length on LAYER metal5 = 39842 um.
+#Total wire length on LAYER metal6 = 46452 um.
+#Total wire length on LAYER metal7 = 5461 um.
+#Total wire length on LAYER metal8 = 6362 um.
+#Total wire length on LAYER metal9 = 1336 um.
+#Total wire length on LAYER metal10 = 1070 um.
+#Total number of vias = 116728
+#Up-Via Summary (total 116728):
+#           
+#-----------------------
+# metal1          58742
+# metal2          40891
+# metal3           9736
+# metal4           3715
+# metal5           2631
+# metal6            543
+# metal7            322
+# metal8            100
+# metal9             48
+#-----------------------
+#                116728 
+#
+#cpu time = 00:00:10, elapsed time = 00:00:11, memory = 841.96 (MB), peak = 875.60 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:01:07
+#Elapsed time = 00:01:12
+#Increased memory = 65.45 (MB)
+#Total memory = 842.21 (MB)
+#Peak memory = 875.60 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 3
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        0        0        0
+#	metal2        1        2        3
+#	Totals        1        2        3
+#cpu time = 00:02:11, elapsed time = 00:02:19, memory = 847.50 (MB), peak = 875.60 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	metal1        0        0
+#	metal2        0        0
+#	metal3        2        2
+#	Totals        2        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 848.22 (MB), peak = 875.60 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 848.45 (MB), peak = 875.60 (MB)
+#Complete Detail Routing.
+#Total wire length = 368572 um.
+#Total half perimeter of net bounding box = 304075 um.
+#Total wire length on LAYER metal1 = 11642 um.
+#Total wire length on LAYER metal2 = 88213 um.
+#Total wire length on LAYER metal3 = 104139 um.
+#Total wire length on LAYER metal4 = 64748 um.
+#Total wire length on LAYER metal5 = 40016 um.
+#Total wire length on LAYER metal6 = 45481 um.
+#Total wire length on LAYER metal7 = 5006 um.
+#Total wire length on LAYER metal8 = 6711 um.
+#Total wire length on LAYER metal9 = 1434 um.
+#Total wire length on LAYER metal10 = 1183 um.
+#Total number of vias = 120769
+#Up-Via Summary (total 120769):
+#           
+#-----------------------
+# metal1          60816
+# metal2          42206
+# metal3          10275
+# metal4           3806
+# metal5           2663
+# metal6            544
+# metal7            315
+# metal8             96
+# metal9             48
+#-----------------------
+#                120769 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:02:12
+#Elapsed time = 00:02:20
+#Increased memory = -22.45 (MB)
+#Total memory = 819.75 (MB)
+#Peak memory = 875.60 (MB)
+#
+#Start Post Route wire spreading..
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:14, elapsed time = 00:00:15, memory = 842.87 (MB), peak = 875.60 (MB)
+#CELL_VIEW RISCV,init has no DRC violation.
+#Total number of DRC violations = 0
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Wed Feb 17 02:06:17 2021
+#
+#
+#Start Post Route Wire Spread.
+#Done with 12437 horizontal wires in 2 hboxes and 10303 vertical wires in 2 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 375897 um.
+#Total half perimeter of net bounding box = 304075 um.
+#Total wire length on LAYER metal1 = 11643 um.
+#Total wire length on LAYER metal2 = 89983 um.
+#Total wire length on LAYER metal3 = 106966 um.
+#Total wire length on LAYER metal4 = 66067 um.
+#Total wire length on LAYER metal5 = 40712 um.
+#Total wire length on LAYER metal6 = 45998 um.
+#Total wire length on LAYER metal7 = 5067 um.
+#Total wire length on LAYER metal8 = 6759 um.
+#Total wire length on LAYER metal9 = 1488 um.
+#Total wire length on LAYER metal10 = 1214 um.
+#Total number of vias = 120769
+#Up-Via Summary (total 120769):
+#           
+#-----------------------
+# metal1          60816
+# metal2          42206
+# metal3          10275
+# metal4           3806
+# metal5           2663
+# metal6            544
+# metal7            315
+# metal8             96
+# metal9             48
+#-----------------------
+#                120769 
+#
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:17, elapsed time = 00:00:18, memory = 850.77 (MB), peak = 875.60 (MB)
+#CELL_VIEW RISCV,init has no DRC violation.
+#Total number of DRC violations = 0
+#   number of violations = 0
+#cpu time = 00:00:22, elapsed time = 00:00:23, memory = 824.75 (MB), peak = 875.60 (MB)
+#CELL_VIEW RISCV,init has no DRC violation.
+#Total number of DRC violations = 0
+#Post Route wire spread is done.
+#Total wire length = 375897 um.
+#Total half perimeter of net bounding box = 304075 um.
+#Total wire length on LAYER metal1 = 11643 um.
+#Total wire length on LAYER metal2 = 89983 um.
+#Total wire length on LAYER metal3 = 106966 um.
+#Total wire length on LAYER metal4 = 66067 um.
+#Total wire length on LAYER metal5 = 40712 um.
+#Total wire length on LAYER metal6 = 45998 um.
+#Total wire length on LAYER metal7 = 5067 um.
+#Total wire length on LAYER metal8 = 6759 um.
+#Total wire length on LAYER metal9 = 1488 um.
+#Total wire length on LAYER metal10 = 1214 um.
+#Total number of vias = 120769
+#Up-Via Summary (total 120769):
+#           
+#-----------------------
+# metal1          60816
+# metal2          42206
+# metal3          10275
+# metal4           3806
+# metal5           2663
+# metal6            544
+# metal7            315
+# metal8             96
+# metal9             48
+#-----------------------
+#                120769 
+#
+#detailRoute Statistics:
+#Cpu time = 00:02:49
+#Elapsed time = 00:03:00
+#Increased memory = -19.57 (MB)
+#Total memory = 822.63 (MB)
+#Peak memory = 875.60 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:03:58
+#Elapsed time = 00:04:13
+#Increased memory = 43.36 (MB)
+#Total memory = 790.05 (MB)
+#Peak memory = 875.60 (MB)
+#Number of warnings = 73
+#Total number of warnings = 74
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Wed Feb 17 02:06:42 2021
+#
+#routeDesign: cpu time = 00:03:59, elapsed time = 00:04:14, memory = 790.09 (MB), peak = 875.60 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+**ERROR: (IMPAFP-9408):	Specified label routing exists
+Starting snapshot creation...
+<CMD> getDrawView
+<CMD> setDrawView fplan
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.fplan.gif
+<CMD> getDrawView
+<CMD> setDrawView amoeba
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.amoeba.gif
+<CMD> getDrawView
+<CMD> setDrawView place
+<CMD> win
+<CMD> dumpToGIF ./ss_routing.place.gif
+Completed snapshot creation (cpu = 0:0:1, real = 0:0:3, mem = 958.59M, memory increment = 0.00M)
+Saving snapshot for fplan view to ss_routing.fplan.gif
+Saving snapshot for amoeba view to ss_routing.amoeba.gif
+Saving snapshot for place view to ss_routing.place.gif
+<CMD> setAnalysisMode -analysisType onChipVariation
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postRoute
+**WARN: (IMPOPT-576):	292 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+Switching SI Aware to true by default in postroute mode   
+GigaOpt running with 1 threads.
+**WARN: No usable buffer/inverter becasue of dont-use/dont-touch setting.
+Updating RC grid for preRoute extraction ...
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerResPerDBUForCorner table.
+** ERROR ** Cannot find corner default_rc_corner in layerCapPerDBUForCorner table.
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6729:update]: Assert "powerView != toCteGetDefaultAnalysisView()"
+**DIAG[/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/op/opUtil.c:6740:update]: Assert "powerViewTlc"
+**WARN: (IMPOPT-665):	istruction[31] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[30] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[29] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[28] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[27] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[26] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[25] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[24] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[23] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[22] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[21] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[20] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[19] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[18] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[17] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[16] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[15] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[14] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[13] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	istruction[12] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-665) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 786.2M, totSessionCpu=0:06:32 **
+**ERROR: (IMPOPT-311):	Optimization will not work when the timing analysis mode is set to -ocv.
+To run optimization while taking into account on chip variation, set the MMMC environment with the right operating condition.
+More information can be found in the documentation.
+**ERROR: (IMPOPT-570):	Initial sanity checks failed for optDesign. Correct above errors/warnings before running optDesign.
+Info: Destroy the CCOpt slew target map.
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_implant -quiet
+<CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'RISCV' of instances=47509 and nets=16426 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design RISCV.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 956.578M)
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix RISCV_postRoute -outDir timingReports
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yet
+**ERROR: (IMPSYT-16):	<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed Feb 17 02:09:29 2021
+
+Design Name: RISCV
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (237.1200, 235.4800)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**** 02:09:30 **** Processed 5000 nets.
+**** 02:09:30 **** Processed 10000 nets.
+**** 02:09:30 **** Processed 15000 nets.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Wed Feb 17 02:09:33 2021
+Time Elapsed: 0:00:04.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:03.5  MEM: 0.000M)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 956.6) ***
+
+**WARN: (IMPVFG-257):	verifyGeometry command is replaced by verify_drc command. It still works in this release but will be removed in future release. Please update your script to use the new command.
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2160
+VG: elapsed time: 12.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:11.6  MEM: 390.4M)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 }
+<CMD> reportGateCount -level 5 -limit 100 -outfile RISCV.gateCount
+Gate area 0.7980 um^2
+[0] RISCV Gates=38432 Cells=15945 Area=30669.3 um^2
+<CMD> saveNetlist RISCV.v
+Writing Netlist "RISCV.v" ...
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf  -ideal_clock_network RISCV.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+AAE DB initialization (MEM=1349.7 CPU=0:00:00.2 REAL=0:00:01.0) 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: RISCV
+# Design Mode: 90nm
+# Analysis Mode: Non-MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+Type 'man IMPDC-634' for more detail.
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+Type 'man IMPDC-634' for more detail.
+Start delay calculation (fullDC) (1 T). (MEM=1349.7)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+**WARN: (IMPESI-3082):	The environment variable TMPDIR is set to the path /tmp/innovus_temp_20880_localhost.localdomain_isa15_HpGW6K which is either not accessible or does not have enough free space to swap delay calculation library data.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via2_5' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via1_7' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via3_2' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via4_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net rst_n is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via8_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via7_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via6_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via5_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net fetch_add_add_1_root_add_20_2_n581 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net fetch_add_add_1_root_add_20_2_n1889 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pc4_if[33] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pc4_if[37] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n6237 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n6230 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n6230 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n6233 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n5039 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n5078 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n5068 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n3489 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n5060 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n3509 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n3509 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n3500 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net decode_rf_n5071 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (EMS-27):	Message (IMPEXT-2883) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'via9_0' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net rst_n. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+Total number of fetched objects 19194
+AAE_INFO-618: Total number of nets in the design is 16426,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1441.34 CPU=0:00:03.7 REAL=0:00:04.0)
+**WARN: (IMPESI-3082):	The environment variable TMPDIR is set to the path /tmp/innovus_temp_20880_localhost.localdomain_isa15_HpGW6K which is either not accessible or does not have enough free space to swap delay calculation library data.
+End delay calculation (fullDC). (MEM=1441.34 CPU=0:00:05.2 REAL=0:00:05.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1441.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**ERROR: (IMPCTE-348):	Timing library is not loaded yet.
+**WARN: (EMS-27):	Message (IMPCTE-348) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1441.3M)
+Starting SI iteration 2
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+Type 'man IMPDC-634' for more detail.
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+Type 'man IMPDC-634' for more detail.
+Start delay calculation (fullDC) (1 T). (MEM=1441.34)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use setDelayCalMode -siAware false to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+Glitch Analysis: View default_view_setup -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View default_view_setup -- Total Number of Nets Analyzed = 19194. 
+Total number of fetched objects 19194
+AAE_INFO-618: Total number of nets in the design is 16426,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1409.34 CPU=0:00:00.3 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1409.34 CPU=0:00:00.4 REAL=0:00:00.0)
+
+*** Memory Usage v#1 (Current mem = 1401.270M, initial mem = 179.684M) ***
+*** Message Summary: 2700 warning(s), 38428 error(s)
+
+--- Ending "Innovus" (totcpu=0:07:10, real=0:16:46, mem=1401.3M) ---

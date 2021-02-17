@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# ./.snaprc_routing2 : snapshot resource file                          
+# label = routing2                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" routing2
+lappend tmpstr "fplan" $sdir/ss_routing2.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_routing2.amoeba.gif
+lappend tmpstr "place" $sdir/ss_routing2.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0
+lappend tmpstr "trgGlbOverflowPctV" 0.00599304801761
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0.00599304801761
+lappend tmpbar WNS
+lappend tmpstr WNS 2147483647.0
+lappend tmpbar TNS
+lappend tmpstr TNS 2147483647.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0

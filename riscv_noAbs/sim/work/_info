@@ -3,9 +3,9 @@ m255
 cModel Technology
 d/home/isa15/Laboratori/Lab3/sim
 T_opt
-Vcd<KjfV;JnKW<6al?Qj^S3
+VS7J<D13Q7TR3WQ>Ki157?1
 06 8 4 ./work tb_riscv fast 0
-o-quiet -auto_acc_if_foreign -work work
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g
 tExplicit 1
 OE;O;6.2g;35
 Eadder
@@ -143,8 +143,9 @@ w1613240193
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/tb/clk_gen.vhd
-F/home/isa15/Laboratori/Lab3/tb/clk_gen.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../tb/clk_gen.vhd
+F../tb/clk_gen.vhd
 l0
 L6
 Va3DK]<1TfUanIW6SGC:KY0
@@ -199,8 +200,9 @@ DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/src/Memories/data_memory.vhd
-F/home/isa15/Laboratori/Lab3/src/Memories/data_memory.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../src/Memories/data_memory.vhd
+F../src/Memories/data_memory.vhd
 l0
 L7
 VaV64M]Yj<`QXmQ=<B<VBF0
@@ -390,8 +392,9 @@ DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/src/Memories/istruction_memory.vhd
-F/home/isa15/Laboratori/Lab3/src/Memories/istruction_memory.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../src/Memories/istruction_memory.vhd
+F../src/Memories/istruction_memory.vhd
 l0
 L7
 VnZH7b_;mkjGen_nE`Uf7R0
@@ -777,6 +780,20 @@ M2 ieee std_logic_1164
 M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
+vRISCV
+IgGO;g5M6ih_^=?^iHE6PZ2
+V7VZ2lG^I:n]Xhim6kGG>C2
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+w1613522954
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 15
+V7VZ2lG^I:n]Xhim6kGG>C2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v
 Eriscv
 w1613395668
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
@@ -829,9 +846,10 @@ tExplicit 1
 vtb_riscv
 IFHcDE4R@jHInK_CLD>gkf3
 VDbzXSc;_bjz==iWj]6bAX0
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
 w1613240201
-8/home/isa15/Laboratori/Lab3/tb/tb_riscv.v
-F/home/isa15/Laboratori/Lab3/tb/tb_riscv.v
+8../tb/tb_riscv.v
+F../tb/tb_riscv.v
 L0 1
 VDbzXSc;_bjz==iWj]6bAX0
 OE;L;6.2g;35

@@ -3,9 +3,9 @@ m255
 cModel Technology
 d/home/isa15/Laboratori/Lab3/sim
 T_opt
-Vcd<KjfV;JnKW<6al?Qj^S3
+VS7J<D13Q7TR3WQ>Ki157?1
 06 8 4 ./work tb_riscv fast 0
-o-quiet -auto_acc_if_foreign -work work
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g
 tExplicit 1
 OE;O;6.2g;35
 Eadder
@@ -25,13 +25,13 @@ Abhv
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work adder _[Q045Vl>H<;2Qkf_5IZB1
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l18
 L13
 VmZ4J6OIJ2IVb`PRH@DE6T1
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Ealu
@@ -48,20 +48,16 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Artl
-DE work out_mux SA=TT7IL>dk^;EWehC6Ve0
-DE work slt_comparator 6R]?P]dSCMY>czbGzn0nL3
-DE work adder _[Q045Vl>H<;2Qkf_5IZB1
-DE work bmux 1z5AEImR?2NFV:X^K:]g13
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work alu g[^X?`CGBc8aoC:RZXbKU0
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l47
 L13
 VU;0Qi[9fH?Td3`FIWZP?61
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Ealu_cu
@@ -81,13 +77,13 @@ Abhe
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work alu_cu edS0RjHj0<D6iYblVLGE60
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l16
 L15
 V90Zf_5BA^Rh_8K5`3R8gO0
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Ebmux
@@ -105,12 +101,12 @@ tExplicit 1
 Abhv
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work bmux 1z5AEImR?2NFV:X^K:]g13
-31
-M1 ieee std_logic_1164
 l13
 L12
 VMmYc8[A3KUmIG?bUa2z5M1
 OE;C;6.2g;35
+31
+M1 ieee std_logic_1164
 o-93 -work ./work
 tExplicit 1
 Ebranch_check
@@ -132,14 +128,14 @@ DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_signed <9<Kcl:S52:oW`F]FQhb20
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work branch_check DCA<L4CkaTOL?;1MbS0X83
-31
-M3 ieee std_logic_1164
-M2 ieee std_logic_signed
-M1 ieee std_logic_arith
 l19
 L15
 V?mk3fO^AFN_bf9QJ]a>EY3
 OE;C;6.2g;35
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_signed
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
 Eclk_gen
@@ -148,8 +144,9 @@ DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 31
-8/home/isa15/Laboratori/Lab3/tb/clk_gen.vhd
-F/home/isa15/Laboratori/Lab3/tb/clk_gen.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../tb/clk_gen.vhd
+F../tb/clk_gen.vhd
 l0
 L6
 Va3DK]<1TfUanIW6SGC:KY0
@@ -188,13 +185,13 @@ Abhe
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work cu Lo[aMF`VClTED1ijmeCNa3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l21
 L19
 VhM4VnYz^Q<S;VFP8iLILS2
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Edata_memory
@@ -204,8 +201,9 @@ DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 31
-8/home/isa15/Laboratori/Lab3/src/Memories/data_memory.vhd
-F/home/isa15/Laboratori/Lab3/src/Memories/data_memory.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../src/Memories/data_memory.vhd
+F../src/Memories/data_memory.vhd
 l0
 L7
 VaV64M]Yj<`QXmQ=<B<VBF0
@@ -243,20 +241,16 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abhe
-DE work mux3to1 6mN;kDlPE4SMUj?i><MHY3
-DE work mux2to1 W6dRf_7f8hEgT:d<a[OLB3
-DE work alu g[^X?`CGBc8aoC:RZXbKU0
-DE work alu_cu edS0RjHj0<D6iYblVLGE60
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work ex_stage @Im;0U:GJDT8B_9g:@l<R3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l66
 L23
 VSh[EjIEa6j5Ra8fLIa5[`2
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eforwarding_unit
@@ -276,13 +270,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work forwarding_unit hW=^L[AIc^<TCGcLWf<He1
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l26
 L21
 V]VF_N1z?m^fneeTE6]3LN1
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Ehazard_detection_unit
@@ -302,13 +296,13 @@ Abhe
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work hazard_detection_unit L4cOYNE]MAXD_:<gZfSE92
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l19
 L17
 VW5Kk4Lm]j`[;KL`Nliz[O3
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eid_stage
@@ -316,35 +310,28 @@ w1613387563
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_signed <9<Kcl:S52:oW`F]FQhb20
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-31
 8/home/isa15/Laboratori/Lab3/src/Stages/ID_Stage.vhd
 F/home/isa15/Laboratori/Lab3/src/Stages/ID_Stage.vhd
 l0
 L5
 VN2U;1fCN5[@<9S:R?VQ=e3
 OE;C;6.2g;35
+31
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work adder _[Q045Vl>H<;2Qkf_5IZB1
-DE work branch_check DCA<L4CkaTOL?;1MbS0X83
-DE work mux2to1 W6dRf_7f8hEgT:d<a[OLB3
-DE work mux_controls aC7<L6NI=aL2<7bLkUe>[0
-DE work cu Lo[aMF`VClTED1ijmeCNa3
-DE work immediategen YXA^D;=XZC2cQ2VdF=i=C0
-DE work register_file 8BG`N76mmghPBBaW5zCmj1
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_signed <9<Kcl:S52:oW`F]FQhb20
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work id_stage N2U;1fCN5[@<9S:R?VQ=e3
-31
-M3 ieee std_logic_1164
-M2 ieee std_logic_signed
-M1 ieee std_logic_arith
 l107
 L33
 V?ICcQ8=j7OiN5kbMlCD4=3
 OE;C;6.2g;35
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_signed
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
 Eif_stage
@@ -361,19 +348,16 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work adder _[Q045Vl>H<;2Qkf_5IZB1
-DE work pc F<STn`<n0WMnZC_Z2kegN3
-DE work mux2to1 W6dRf_7f8hEgT:d<a[OLB3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work if_stage 9]ao5hicD8Pj?m@zJ2d253
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l44
 L15
 VDY^6NnH_V`R<=gSZd1K^70
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eimmediategen
@@ -393,13 +377,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work immediategen YXA^D;=XZC2cQ2VdF=i=C0
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l14
 L10
 V_37glfk]_];3PFFK9@8lS1
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eistruction_memory
@@ -409,8 +393,9 @@ DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 31
-8/home/isa15/Laboratori/Lab3/src/Memories/istruction_memory.vhd
-F/home/isa15/Laboratori/Lab3/src/Memories/istruction_memory.vhd
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+8../src/Memories/istruction_memory.vhd
+F../src/Memories/istruction_memory.vhd
 l0
 L7
 VnZH7b_;mkjGen_nE`Uf7R0
@@ -451,13 +436,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work mux2to1 W6dRf_7f8hEgT:d<a[OLB3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l13
 L12
 VKoSAM=G[fmTJT>^dG;H>50
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Emux3to1
@@ -477,13 +462,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work mux3to1 6mN;kDlPE4SMUj?i><MHY3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l14
 L13
 V34URJBi`K;4QlCKYR>]Pe0
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Emux4to1
@@ -503,13 +488,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work mux4to1 h84WS:o88V0cg0?[NiW`C3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l15
 L14
 VKmFJS<]kXSh>B?=]lR1oO0
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Emux_controls
@@ -529,13 +514,13 @@ Abeh
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work mux_controls aC7<L6NI=aL2<7bLkUe>[0
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l13
 L12
 VGAfbDJ39hF:G0:ho5b<>?0
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eout_mux
@@ -553,12 +538,12 @@ tExplicit 1
 Abhv
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work out_mux SA=TT7IL>dk^;EWehC6Ve0
-31
-M1 ieee std_logic_1164
 l14
 L13
 VF0G;FF[1QFahD[BeH:_PG1
 OE;C;6.2g;35
+31
+M1 ieee std_logic_1164
 o-93 -work ./work
 tExplicit 1
 Epc
@@ -578,13 +563,13 @@ Abhe
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work pc F<STn`<n0WMnZC_Z2kegN3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l17
 L15
 VKB9>bJ=FVaiAUlZL^CTcO1
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Epipe_ex_mem
@@ -601,46 +586,42 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work reg i947Lf5o5_n_gTYmSl7jI1
-DE work regn MGBo6>C@<z>lCgfmGijE:1
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work pipe_ex_mem ^TOkXZJH;VlH6Ngl@GWB10
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l45
 L28
 V>caE^2e:ah[flVzS_GF4J1
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Epipe_id_ex
 w1613395403
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-31
 8/home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_id_ex.vhd
 F/home/isa15/Laboratori/Lab3/src/Pipeline_registers/pipe_id_ex.vhd
 l0
 L5
 VVIjO@8NXhbQ?^fM;[WYNf1
 OE;C;6.2g;35
+31
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work reg i947Lf5o5_n_gTYmSl7jI1
-DE work regn MGBo6>C@<z>lCgfmGijE:1
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work pipe_id_ex VIjO@8NXhbQ?^fM;[WYNf1
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l59
 L42
 V<3MX>;=gB^Bd3hn5G5bc40
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Epipe_if_id
@@ -657,17 +638,16 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work regn_load maod?DZ<^PS2h6=]GCl@Y0
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work pipe_if_id =GBc;OI9DDYP=5]Q=?=DP3
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l32
 L18
 VChVO1N<4HkLGQjZ4=c1a11
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Epipe_mem_wb
@@ -684,18 +664,16 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work reg i947Lf5o5_n_gTYmSl7jI1
-DE work regn MGBo6>C@<z>lCgfmGijE:1
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work pipe_mem_wb [XC5P]`UjJ3oBdZT5C1QR2
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l41
 L24
 VDA^UXoJgD8C7gUWO;S^Z=2
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Ereg
@@ -715,66 +693,65 @@ Abhe
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work reg i947Lf5o5_n_gTYmSl7jI1
-31
-M2 ieee std_logic_1164
-M1 ieee std_logic_arith
 l13
 L12
 V0@ll_`eM^X1XacF1d^a2k2
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
 Eregister_file
 w1613427871
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-31
 8/home/isa15/Laboratori/Lab3/src/Decode/register_file.vhd
 F/home/isa15/Laboratori/Lab3/src/Decode/register_file.vhd
 l0
 L5
 V8BG`N76mmghPBBaW5zCmj1
 OE;C;6.2g;35
+31
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work mux2to1 W6dRf_7f8hEgT:d<a[OLB3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work register_file 8BG`N76mmghPBBaW5zCmj1
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l37
 L17
 VRMeJWfN7nS7nE=8lJ@7GP2
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eregn
 w1613143534
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-31
 8/home/isa15/Laboratori/Lab3/src/common/regN.vhd
 F/home/isa15/Laboratori/Lab3/src/common/regN.vhd
 l0
 L5
 VMGBo6>C@<z>lCgfmGijE:1
 OE;C;6.2g;35
+31
 o-93 -work ./work
 tExplicit 1
 Abhe
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work regn MGBo6>C@<z>lCgfmGijE:1
-31
-M2 ieee std_logic_1164
-M1 ieee std_logic_arith
 l14
 L13
 V>iEYFFC8iam@`ZK7eB11X0
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
 Eregn_load
@@ -794,49 +771,53 @@ Abhe
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work regn_load maod?DZ<^PS2h6=]GCl@Y0
-31
-M2 ieee std_logic_1164
-M1 ieee std_logic_arith
 l16
 L15
 VYgChIlAW<7`ZTDfDj80V01
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
+vRISCV
+IgGO;g5M6ih_^=?^iHE6PZ2
+V7VZ2lG^I:n]Xhim6kGG>C2
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
+w1613522954
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 15
+V7VZ2lG^I:n]Xhim6kGG>C2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v
 Eriscv
 w1613395668
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-31
 8/home/isa15/Laboratori/Lab3/src/RISCV.vhd
 F/home/isa15/Laboratori/Lab3/src/RISCV.vhd
 l0
 L5
 VH<n]hQTY0d^4e;O:W5^NO1
 OE;C;6.2g;35
+31
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work forwarding_unit hW=^L[AIc^<TCGcLWf<He1
-DE work hazard_detection_unit L4cOYNE]MAXD_:<gZfSE92
-DE work wb_stage giE8[:=3O[8Y;h?k3c`FR0
-DE work pipe_mem_wb [XC5P]`UjJ3oBdZT5C1QR2
-DE work pipe_ex_mem ^TOkXZJH;VlH6Ngl@GWB10
-DE work ex_stage @Im;0U:GJDT8B_9g:@l<R3
-DE work pipe_id_ex VIjO@8NXhbQ?^fM;[WYNf1
-DE work id_stage N2U;1fCN5[@<9S:R?VQ=e3
-DE work pipe_if_id =GBc;OI9DDYP=5]Q=?=DP3
-DE work if_stage 9]ao5hicD8Pj?m@zJ2d253
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work riscv H<n]hQTY0d^4e;O:W5^NO1
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
 l257
 L17
 VABcf9Q]^X4`N<Y61d_JA40
 OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eslt_comparator
@@ -854,20 +835,21 @@ tExplicit 1
 Abhv
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work slt_comparator 6R]?P]dSCMY>czbGzn0nL3
-31
-M1 ieee std_logic_1164
 l14
 L13
 VX>EYoH4OG;ondRGL2JADS3
 OE;C;6.2g;35
+31
+M1 ieee std_logic_1164
 o-93 -work ./work
 tExplicit 1
 vtb_riscv
 IFHcDE4R@jHInK_CLD>gkf3
 VDbzXSc;_bjz==iWj]6bAX0
+d/home/isa15/Laboratori/Lab3/riscv_noAbs/sim
 w1613240201
-8/home/isa15/Laboratori/Lab3/tb/tb_riscv.v
-F/home/isa15/Laboratori/Lab3/tb/tb_riscv.v
+8../tb/tb_riscv.v
+F../tb/tb_riscv.v
 L0 1
 VDbzXSc;_bjz==iWj]6bAX0
 OE;L;6.2g;35
@@ -889,18 +871,17 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abeh
-DE work mux4to1 h84WS:o88V0cg0?[NiW`C3
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_signed <9<Kcl:S52:oW`F]FQhb20
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work wb_stage giE8[:=3O[8Y;h?k3c`FR0
-31
-M3 ieee std_logic_1164
-M2 ieee std_logic_signed
-M1 ieee std_logic_arith
 l25
 L14
 V:=6J6QbFl<j`ecPjj8c590
 OE;C;6.2g;35
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_signed
+M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1

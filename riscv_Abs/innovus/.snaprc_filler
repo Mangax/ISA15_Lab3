@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# ./.snaprc_filler : snapshot resource file                          
+# label = filler                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" filler
+lappend tmpstr "fplan" $sdir/ss_filler.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_filler.amoeba.gif
+lappend tmpstr "place" $sdir/ss_filler.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0.00850284775252
+lappend tmpstr "trgGlbOverflowPctV" 0.00352199485789
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0.0120248426104
+lappend tmpbar WNS
+lappend tmpstr WNS 2147483647.0
+lappend tmpbar TNS
+lappend tmpstr TNS 2147483647.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0

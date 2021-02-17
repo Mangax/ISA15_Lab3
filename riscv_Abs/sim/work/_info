@@ -3,9 +3,9 @@ m255
 cModel Technology
 d/home/isa15/Laboratori/Lab3/riscv_Abs/sim
 T_opt
-VdL=W=mVT44kah980j^@7o3
+VNH12j1YD3WfEc0U@LI2C41
 06 8 4 ./work tb_riscv fast 0
-o-quiet -auto_acc_if_foreign -work work
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g
 tExplicit 1
 OE;O;6.2g;35
 Eabsolute_value
@@ -169,8 +169,8 @@ w1613240193
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/riscv_Abs/tb/clk_gen.vhd
-F/home/isa15/Laboratori/Lab3/riscv_Abs/tb/clk_gen.vhd
+8../tb/clk_gen.vhd
+F../tb/clk_gen.vhd
 l0
 L6
 Va3DK]<1TfUanIW6SGC:KY0
@@ -225,8 +225,8 @@ DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/riscv_Abs/src/Memories/data_memory.vhd
-F/home/isa15/Laboratori/Lab3/riscv_Abs/src/Memories/data_memory.vhd
+8../src/Memories/data_memory.vhd
+F../src/Memories/data_memory.vhd
 l0
 L7
 VaV64M]Yj<`QXmQ=<B<VBF0
@@ -416,8 +416,8 @@ DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8/home/isa15/Laboratori/Lab3/riscv_Abs/src/Memories/istruction_memory.vhd
-F/home/isa15/Laboratori/Lab3/riscv_Abs/src/Memories/istruction_memory.vhd
+8../src/Memories/istruction_memory.vhd
+F../src/Memories/istruction_memory.vhd
 l0
 L7
 VnZH7b_;mkjGen_nE`Uf7R0
@@ -829,6 +829,19 @@ M2 ieee std_logic_1164
 M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
+vRISCV
+I5<2LW=m=M3gmm1_C2^cA30
+V7VZ2lG^I:n]Xhim6kGG>C2
+w1613521003
+8../netlist/riscv.v
+F../netlist/riscv.v
+L0 8
+V7VZ2lG^I:n]Xhim6kGG>C2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v
 Eslt_comparator
 w1613394168
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
@@ -856,8 +869,8 @@ vtb_riscv
 IFHcDE4R@jHInK_CLD>gkf3
 VDbzXSc;_bjz==iWj]6bAX0
 w1613240201
-8/home/isa15/Laboratori/Lab3/riscv_Abs/tb/tb_riscv.v
-F/home/isa15/Laboratori/Lab3/riscv_Abs/tb/tb_riscv.v
+8../tb/tb_riscv.v
+F../tb/tb_riscv.v
 L0 1
 VDbzXSc;_bjz==iWj]6bAX0
 OE;L;6.2g;35
